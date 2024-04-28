@@ -1,0 +1,41 @@
+@use "../abstracts";
+
+.heading {
+    font-weight: 800;
+
+    &--lv1 {
+        font-size: 6.2rem;
+        line-height: 1.06;
+
+        @include abstracts.screen(sm) {
+            font-size: 3.2rem;
+            line-height: 1.31;
+        }
+    }
+
+    &--lv2 {
+        font-size: 4.2rem;
+        line-height: 1.23;
+
+        @include abstracts.screen(sm) {
+            font-size: 2.6rem;
+            line-height: 1.38;
+        }
+    }
+
+    &--lv3 {
+        font-size: 1.8rem;
+        line-height: 1.55;
+
+        @include abstracts.screen(sm) {
+            font-size: 1.6rem;
+            line-height: 1.62;
+        }
+    }
+}
+
+.desc {
+    font-size: 1.8rem;
+    line-height: 1.55;
+    color: var(--text-desc-color);
+}

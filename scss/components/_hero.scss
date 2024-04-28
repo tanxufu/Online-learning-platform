@@ -1,0 +1,242 @@
+@use "../abstracts";
+
+.hero {
+    background: var(--background-color);
+
+    &__inner {
+        padding: 50px 0 100px;
+
+        @include abstracts.screen(lg) {
+            padding: 40px 0 40px;
+        }
+
+        @include abstracts.screen(md) {
+            padding: 25px 0 30px;
+        }
+    }
+
+    &__content {
+        margin-right: 50px;
+
+        @include abstracts.screen(lg) {
+            margin-right: 0;
+        }
+    }
+
+    &__media {
+        margin-left: 50px;
+
+        @include abstracts.screen(lg) {
+            margin-top: 50px;
+            margin-left: 0;
+        }
+    }
+
+    &__heading,
+    &__desc {
+        max-width: 470px;
+
+        @include abstracts.screen(lg) {
+            max-width: 100%;
+        }
+    }
+
+    &__desc {
+        text-align-last: left;
+        margin-top: 14px;
+        color: var(--text-color);
+    }
+
+    &__act {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin-top: 40px;
+
+        @include abstracts.screen(lg) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-top: 98px;
+
+        @include abstracts.screen(xl) {
+            margin-top: 40px;
+        }
+    }
+
+    &-review {
+        display: flex;
+        flex-direction: column;
+
+        &__img {
+            max-width: 172px;
+        }
+
+        &__number {
+            margin-top: 16px;
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 1.45;
+        }
+
+        &__desc {
+            margin-top: 6px;
+            font-size: 1.8rem;
+            line-height: 1.55;
+        }
+
+        &__link {
+            margin-top: 16px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 1.55;
+            text-decoration: underline;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        &__book-img {
+            width: 122px;
+        }
+    }
+
+    &__img-wrap--top-left,
+    &__img-wrap--bot-left,
+    &__img-wrap--top-right,
+    &__img-wrap--bot-right {
+        position: relative;
+
+        width: 100%;
+        padding-top: 153%;
+    }
+
+    &__img-wrap--bot-left,
+    &__img-wrap--bot-right {
+        margin-top: 30px;
+
+        @include abstracts.screen(xl) {
+            margin-top: 15px;
+        }
+
+        @include abstracts.screen(lg) {
+            margin-top: 30px;
+        }
+
+        @include abstracts.screen(sm) {
+            margin-top: 15px;
+        }
+    }
+
+    &__img-top-left,
+    &__img-top-right,
+    &__img-bot-left,
+    &__img-bot-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__img-bot-right {
+        top: -70px;
+
+        @include abstracts.screen(xl) {
+            top: -50px;
+        }
+
+        @include abstracts.screen(lg) {
+            top: -85px;
+        }
+
+        @include abstracts.screen(md) {
+            top: -65px;
+        }
+
+        @include abstracts.screen(sm) {
+            top: -50px;
+        }
+    }
+
+    &__img-wrap--bot-left {
+        padding-top: 86%;
+    }
+
+    &__img-wrap--top-right {
+        padding-top: 121%;
+    }
+
+    &__img-wrap--bot-right {
+        padding-top: 100%;
+    }
+
+    &__media-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -30px;
+
+        @include abstracts.screen(xl) {
+            margin-top: -37px;
+        }
+
+        @include abstracts.screen(lg) {
+            margin-top: -35px;
+        }
+
+        @include abstracts.screen(sm) {
+            margin-top: -25px;
+        }
+    }
+
+    &__scroll {
+        margin-top: 12px;
+
+        font-size: 1.8rem;
+        line-height: 1.55;
+
+        @include abstracts.screen(xl) {
+            margin-top: 6px;
+
+            font-size: 1.6rem;
+        }
+
+        @include abstracts.screen(lg) {
+            margin-top: 12px;
+
+            font-size: 1.8rem;
+        }
+
+        @include abstracts.screen(sm) {
+            margin-top: 4px;
+
+            font-size: 1.4rem;
+        }
+
+        &-icon {
+            width: 24px;
+            height: 100%;
+
+            @include abstracts.screen(lg) {
+                width: 26px;
+                height: 100%;
+            }
+
+            @include abstracts.screen(sm) {
+                width: 22px;
+                height: 100%;
+            }
+        }
+    }
+}

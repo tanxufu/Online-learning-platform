@@ -1,0 +1,56 @@
+@use "../abstracts";
+
+// common
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 58px;
+    padding: 0 20px;
+    border-radius: 8px;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+
+    &--medium {
+        height: 52px;
+        font-size: 1.6rem;
+    }
+
+    &--small {
+        height: 44px;
+    }
+
+    &--primary {
+        background: var(--primary-color);
+        color: var(--text-color);
+    }
+
+    &--black {
+        background: var(--third-color);
+        color: #fff;
+    }
+
+    &--outline {
+        border-radius: 6px;
+        border: 1px solid var(--third-color);
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+// log-in
+.log-in__btn {
+    margin-left: 78px;
+
+    @include abstracts.screen(lg) {
+        margin-left: 0;
+    }
+}

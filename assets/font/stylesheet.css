@@ -1,89 +1,89 @@
 @font-face {
-    font-family: 'FONTSPRING DEMO - Neurial Grotesk';
-    src: url('FONTSPRINGDEMO-NeurialGroteskLightItalicRegular.woff2') format('woff2'),
-        url('FONTSPRINGDEMO-NeurialGroteskLightItalicRegular.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'FONTSPRING DEMO - Neurial Grotesk';
-    src: url('FONTSPRINGDEMO-NeurialGroteskExtraboldRegular.woff2') format('woff2'),
-        url('FONTSPRINGDEMO-NeurialGroteskExtraboldRegular.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'FONTSPRING DEMO - Neurial Grotesk Exbold';
-    src: url('FONTSPRINGDEMO-NeurialGroteskExboldItalicRegular.woff2') format('woff2'),
-        url('FONTSPRINGDEMO-NeurialGroteskExboldItalicRegular.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'FONTSPRING DEMO - Neurial Grotesk';
-    src: url('FONTSPRINGDEMO-NeurialGroteskBoldRegular.woff2') format('woff2'),
-        url('FONTSPRINGDEMO-NeurialGroteskBoldRegular.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'FONTSPRING DEMO - Neurial Grotesk';
-    src: url('FONTSPRINGDEMO-NeurialGroteskBoldItalicRegular.woff2') format('woff2'),
-        url('FONTSPRINGDEMO-NeurialGroteskBoldItalicRegular.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'FONTSPRING DEMO - Neurial Grotesk';
-    src: url('FONTSPRINGDEMO-NeurialGroteskLightRegular.woff2') format('woff2'),
-        url('FONTSPRINGDEMO-NeurialGroteskLightRegular.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'FONTSPRING DEMO - Neurial Grotesk';
-    src: url('FONTSPRINGDEMO-NeurialGroteskItalicRegular.woff2') format('woff2'),
-        url('FONTSPRINGDEMO-NeurialGroteskItalicRegular.woff') format('woff');
+    font-family: 'Neurial Grotesk';
+    src: url('NeurialGrotesk-Regular.woff2') format('woff2'),
+        url('NeurialGrotesk-Regular.woff') format('woff');
     font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'FONTSPRING DEMO - Neurial Grotesk';
-    src: url('FONTSPRINGDEMO-NeurialGroteskMediumRegular.woff2') format('woff2'),
-        url('FONTSPRINGDEMO-NeurialGroteskMediumRegular.woff') format('woff');
-    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'FONTSPRING DEMO - Neurial Grotesk';
-    src: url('FONTSPRINGDEMO-NeurialGroteskMediumItalicRegular.woff2') format('woff2'),
-        url('FONTSPRINGDEMO-NeurialGroteskMediumItalicRegular.woff') format('woff');
+    font-family: 'Neurial Grotesk';
+    src: url('NeurialGrotesk-MediumItalic.woff2') format('woff2'),
+        url('NeurialGrotesk-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'FONTSPRING DEMO - Neurial Grotesk';
-    src: url('FONTSPRINGDEMO-NeurialGroteskRegular.woff2') format('woff2'),
-        url('FONTSPRINGDEMO-NeurialGroteskRegular.woff') format('woff');
+    font-family: 'Neurial Grotesk';
+    src: url('NeurialGrotesk-Medium.woff2') format('woff2'),
+        url('NeurialGrotesk-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neurial Grotesk';
+    src: url('NeurialGrotesk-RegularItalic.woff2') format('woff2'),
+        url('NeurialGrotesk-RegularItalic.woff') format('woff');
     font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neurial Grotesk';
+    src: url('NeurialGrotesk-Bold.woff2') format('woff2'),
+        url('NeurialGrotesk-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neurial Grotesk';
+    src: url('NeurialGrotesk-BoldItalic.woff2') format('woff2'),
+        url('NeurialGrotesk-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neurial Grotesk';
+    src: url('NeurialGrotesk-Light.woff2') format('woff2'),
+        url('NeurialGrotesk-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neurial Grotesk';
+    src: url('NeurialGrotesk-LightItalic.woff2') format('woff2'),
+        url('NeurialGrotesk-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neurial Grotesk Exbold';
+    src: url('NeurialGrotesk-ExtraboldItalic.woff2') format('woff2'),
+        url('NeurialGrotesk-ExtraboldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neurial Grotesk';
+    src: url('NeurialGrotesk-Extrabold.woff2') format('woff2'),
+        url('NeurialGrotesk-Extrabold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }

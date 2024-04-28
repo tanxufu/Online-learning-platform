@@ -1,0 +1,47 @@
+@use "../abstracts";
+
+.banner {
+    height: 70px;
+    background: var(--primary-color);
+    overflow: hidden;
+
+    &__list {
+        display: flex;
+        gap: 58px;
+        width: calc(535px * 8);
+
+        animation: scroll 60s linear infinite;
+    }
+
+    &__link {
+        position: relative;
+        display: block;
+        white-space: nowrap;
+
+        width: 535px;
+        font-size: 1.8rem;
+        line-height: 70px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 30px;
+            left: -28px;
+            display: block;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+
+            background: #0b0d21;
+        }
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-535px * 4));
+    }
+}

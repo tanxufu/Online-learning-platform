@@ -1,0 +1,51 @@
+@use "../abstracts";
+
+.slider {
+    padding: 70px 0;
+    background: #434ec4;
+
+    @include abstracts.screen(md) {
+        padding: 55px 0;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0px 79px;
+        border-right: 1px solid #929aef;
+
+        &--no-border {
+            border-right: none;
+        }
+
+        @include abstracts.screen(lg) {
+            border-right: none;
+        }
+    }
+
+    &__number {
+        font-size: 4.2rem;
+        font-weight: 800;
+        line-height: 1.09;
+
+        color: #fff;
+
+        @include abstracts.screen(sm) {
+            font-size: 2.6rem;
+            line-height: 1.38;
+        }
+    }
+
+    &__desc {
+        color: #d0d4ff;
+        white-space: nowrap;
+
+        @include abstracts.screen(sm) {
+            font-size: 1.4rem;
+            line-height: 1.75;
+        }
+    }
+}

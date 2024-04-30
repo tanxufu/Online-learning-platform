@@ -2307,9 +2307,6 @@ input:-webkit-autofill:hover {
 }
 
 .subcribe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 100px 0;
   background: var(--primary-color);
 }
@@ -2317,6 +2314,11 @@ input:-webkit-autofill:hover {
   .subcribe {
     padding: 50px 0;
   }
+}
+.subcribe__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .subcribe__heading, .subcribe__desc {
   text-align: center;
@@ -2330,11 +2332,14 @@ input:-webkit-autofill:hover {
     margin-top: 12px;
   }
 }
+
 .subcribe-form {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 18px;
   margin-top: 40px;
+  width: 100%;
 }
 @media (max-width: 767.98px) {
   .subcribe-form {
@@ -2344,7 +2349,7 @@ input:-webkit-autofill:hover {
 }
 .subcribe-form__input {
   height: 58px;
-  max-width: 392px;
+  width: 392px;
   border-radius: 8px;
   border: 1px solid var(--third-color);
   padding: 0 15px;
@@ -2352,14 +2357,25 @@ input:-webkit-autofill:hover {
   line-height: 1.55;
   font-weight: 500;
 }
+@media (max-width: 767.98px) {
+  .subcribe-form__input {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+}
 .subcribe-form__input::placeholder {
   color: inherit;
   font-size: 1.8rem;
   line-height: 1.55;
   opacity: 0.6;
 }
+@media (max-width: 575.98px) {
+  .subcribe-form__input::placeholder {
+    font-size: 1.6rem;
+  }
+}
 @media (max-width: 767.98px) {
-  .subcribe-form__btn, .subcribe-form__input {
+  .subcribe-form__btn {
     width: 100%;
   }
 }
@@ -2602,7 +2618,7 @@ input:-webkit-autofill:hover {
 }
 @media (max-width: 575.98px) {
   .course__desc {
-    padding-top: 12px;
+    margin-top: 12px;
   }
 }
 .course__list {

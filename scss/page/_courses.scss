@@ -24,7 +24,7 @@
         margin-top: 20px;
 
         @include abstracts.screen(sm) {
-            padding-top: 12px;
+            margin-top: 12px;
         }
     }
 

@@ -3,7 +3,6 @@
 .logo {
     display: flex;
     align-items: center;
-    flex: 1;
     gap: 6px;
 
     @include abstracts.screen(lg) {

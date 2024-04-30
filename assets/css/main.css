@@ -1583,6 +1583,7 @@ input:-webkit-autofill:hover {
 }
 
 .navbar {
+  margin-left: auto;
   align-items: center;
 }
 @media (max-width: 991.98px) {
@@ -1682,6 +1683,111 @@ input:-webkit-autofill:hover {
   opacity: 0.8;
 }
 
+.footer {
+  padding: 95px 0 28px;
+  background: var(--background-color);
+}
+@media (max-width: 767.98px) {
+  .footer {
+    padding: 50px 0 28px;
+  }
+}
+.footer__heading {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+.footer__list {
+  margin-top: -14px;
+}
+.footer__link {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 1.6rem;
+  line-height: 1.62;
+  color: var(--text-desc-color);
+  white-space: nowrap;
+  transition: color, font-weight, text-decoration;
+  transition-duration: 0.1s;
+}
+.footer__link:hover {
+  color: var(--text-color);
+  font-weight: 500;
+  text-decoration: underline;
+}
+.footer__contact {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+@media (max-width: 1199.98px) {
+  .footer__contact {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+}
+.footer__contact-title {
+  color: var(--text-desc-color);
+  font-size: 1.6rem;
+  line-height: 1.62;
+}
+.footer__contact-type {
+  margin-top: 18px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.footer__social-list {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 24px;
+}
+.footer__social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--third-color);
+  transition: background-color filter;
+  transition-duration: 0.4s;
+}
+.footer__social-item:hover {
+  cursor: pointer;
+  background: var(--primary-color);
+}
+.footer__social-item:hover .footer__social-icon {
+  filter: brightness(0) saturate(100%) invert(8%) sepia(15%) saturate(2019%) hue-rotate(196deg) brightness(95%) contrast(105%);
+}
+.footer__social-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) saturate(100%) invert(94%) sepia(6%) saturate(0%) hue-rotate(140deg) brightness(106%) contrast(108%);
+}
+.footer__separate {
+  margin: 50px 0 30px;
+  background: #686977;
+}
+.footer__paymethod {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.footer__paymethod-img {
+  width: 215px;
+  height: 18px;
+}
+.footer__copy-right {
+  color: var(--text-desc-color);
+  font-size: 1.6rem;
+  line-height: 1.62;
+}
+
 .banner {
   height: 70px;
   background: var(--primary-color);
@@ -1724,7 +1830,6 @@ input:-webkit-autofill:hover {
 .logo {
   display: flex;
   align-items: center;
-  flex: 1;
   gap: 6px;
 }
 @media (max-width: 991.98px) {

@@ -1,0 +1,134 @@
+@use "../abstracts";
+
+.footer {
+    padding: 95px 0 28px;
+    background: var(--background-color);
+
+    @include abstracts.screen(md) {
+        padding: 50px 0 28px;
+    }
+
+    &__heading {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-bottom: 24px;
+    }
+
+    &__list {
+        margin-top: -14px;
+    }
+
+    &__link {
+        display: inline-block;
+
+        margin-top: 14px;
+        font-size: 1.6rem;
+        line-height: 1.62;
+        color: var(--text-desc-color);
+        white-space: nowrap;
+
+        transition: color, font-weight, text-decoration;
+        transition-duration: 0.1s;
+
+        &:hover {
+            color: var(--text-color);
+            font-weight: 500;
+            text-decoration: underline;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        align-items: center;
+
+        gap: 35px;
+
+        @include abstracts.screen(xl) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 28px;
+        }
+
+        &-title {
+            color: var(--text-desc-color);
+            font-size: 1.6rem;
+            line-height: 1.62;
+        }
+
+        &-type {
+            margin-top: 18px;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+    }
+
+    &__social {
+        &-list {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+            margin-top: 24px;
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--third-color);
+            transition: background-color filter;
+            transition-duration: 0.4s;
+
+            &:hover {
+                cursor: pointer;
+                background: var(--primary-color);
+
+                .footer__social-icon {
+                    filter: brightness(0) saturate(100%) invert(8%) sepia(15%)
+                        saturate(2019%) hue-rotate(196deg) brightness(95%)
+                        contrast(105%);
+                }
+            }
+        }
+
+        &-icon {
+            display: block;
+            width: 16px;
+            height: 16px;
+            filter: brightness(0) saturate(100%) invert(94%) sepia(6%)
+                saturate(0%) hue-rotate(140deg) brightness(106%) contrast(108%);
+        }
+    }
+
+    &__separate {
+        margin: 50px 0 30px;
+        background: #686977;
+    }
+
+    &__bottom {
+    }
+
+    &__paymethod {
+        display: flex;
+        align-items: center;
+
+        height: 100%;
+
+        &-img {
+            width: 215px;
+            height: 18px;
+        }
+    }
+
+    &__copy-right {
+        color: var(--text-desc-color);
+        font-size: 1.6rem;
+        line-height: 1.62;
+    }
+}

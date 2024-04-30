@@ -4,6 +4,10 @@
     background: var(--background-color);
     padding: 100px 0;
 
+    &--page {
+        padding: 50px 0 100px;
+    }
+
     @include abstracts.screen(md) {
         padding: 50px 0;
     }

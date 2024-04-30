@@ -1,0 +1,31 @@
+@use "../abstracts";
+
+.tropic {
+    padding-top: 100px;
+
+    @include abstracts.screen(md) {
+        padding-top: 50px;
+    }
+
+    &__card {
+        border: 1px solid #e9eaf0;
+
+        transition: box-shadow 0.2s;
+
+        &:hover {
+            box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+        }
+    }
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__list {
+        margin-top: 70px;
+
+        @include abstracts.screen(md) {
+            margin-top: 30px;
+        }
+    }
+}

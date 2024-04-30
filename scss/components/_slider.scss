@@ -2,7 +2,7 @@
 
 .slider {
     padding: 70px 0;
-    background: #434ec4;
+    background: var(--secondary-color);
 
     @include abstracts.screen(md) {
         padding: 55px 0;

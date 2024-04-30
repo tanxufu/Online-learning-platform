@@ -1,0 +1,45 @@
+@use "../abstracts";
+
+.course {
+    background: var(--background-color);
+    padding: 100px 0;
+
+    @include abstracts.screen(md) {
+        padding: 50px 0;
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__heading,
+    &__desc {
+        max-width: 570px;
+    }
+
+    &__desc {
+        margin-top: 20px;
+    }
+
+    &__list {
+        padding-top: 70px;
+
+        @include abstracts.screen(md) {
+            padding-top: 30px;
+        }
+    }
+
+    &__all {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-btn {
+            margin-top: 55px;
+            max-width: 204px;
+        }
+    }
+}

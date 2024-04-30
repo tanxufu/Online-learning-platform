@@ -22,6 +22,10 @@
 
     &__desc {
         margin-top: 20px;
+
+        @include abstracts.screen(sm) {
+            padding-top: 12px;
+        }
     }
 
     &__list {

@@ -37,4 +37,9 @@
     font-size: 1.8rem;
     line-height: 1.55;
     color: var(--text-desc-color);
+
+    @include abstracts.screen(sm) {
+        font-size: 1.4rem;
+        line-height: 1.71;
+    }
 }

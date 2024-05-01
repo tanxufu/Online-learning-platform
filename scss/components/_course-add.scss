@@ -1,0 +1,81 @@
+.course-add {
+    padding: 24px;
+    border-radius: 12px;
+    background: #fff;
+
+    &__heading {
+        font-size: 2rem;
+        line-height: 1.5;
+        font-weight: 600;
+    }
+
+    &__price {
+        margin-top: 14px;
+
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 1.25;
+    }
+
+    &__review {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+
+        margin-top: 20px;
+    }
+
+    &__avt-group {
+        display: flex;
+        margin-left: 5px;
+    }
+
+    &__avt {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        margin-left: -5px;
+    }
+
+    &__start-group {
+        display: flex;
+        align-items: center;
+    }
+
+    &__desc {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    &__btn {
+        margin: 20px 0;
+        height: 36px;
+        width: 258px;
+
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.07;
+    }
+
+    &__list {
+        margin-top: 26px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        margin-top: 12px;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        font-weight: 400;
+        filter: brightness(0) saturate(100%) invert(42%) sepia(7%)
+            saturate(756%) hue-rotate(198deg) brightness(93%) contrast(86%);
+    }
+}

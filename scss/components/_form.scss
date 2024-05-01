@@ -1,0 +1,110 @@
+@use "../abstracts";
+
+.form {
+    &__group {
+        margin-top: 20px;
+    }
+
+    &__row {
+        display: flex;
+        gap: 14px;
+
+        @include abstracts.screen(md) {
+            flex-direction: column;
+        }
+    }
+
+    &__input {
+        padding: 16px 20px;
+        max-width: 216px;
+        border-radius: 10px;
+        background: #f6f8fb;
+
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.5;
+
+        @include abstracts.screen(md) {
+            max-width: 100%;
+        }
+
+        &::placeholder {
+            color: var(--text-desc-color);
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+    }
+
+    &__area {
+        min-width: 676px;
+        max-height: 128px;
+        resize: none;
+
+        @include abstracts.screen(md) {
+            min-width: 100%;
+        }
+    }
+
+    &__input,
+    &__area {
+        border: 1px solid var(--third-color);
+
+        transition: border-color 0.2s;
+
+        &:focus-within {
+            border-color: var(--primary-color);
+        }
+    }
+
+    &__checkbox {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        user-select: none;
+
+        &-label {
+            margin-left: 30px;
+            font-size: 1.8rem;
+            color: var(--text-desc-color);
+        }
+
+        &::before,
+        &::after {
+            content: "";
+
+            position: absolute;
+        }
+
+        &::before {
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            border: 2px solid var(--third-color);
+        }
+    }
+
+    &__checkbox:has(:checked) {
+        &::before {
+            border-color: var(--primary-color);
+            background: var(--primary-color);
+        }
+
+        &::after {
+            left: 3px;
+            top: 3px;
+            rotate: -45deg;
+            width: 14px;
+            height: 8px;
+            border: 3px solid;
+            border-color: transparent transparent var(--third-color)
+                var(--third-color);
+        }
+    }
+
+    &__btn {
+        margin-top: 30px;
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,17 @@
+@use "../abstracts";
+
+.pricing {
+    padding: 30px 0 100px;
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__list {
+        margin-top: 70px;
+
+        @include abstracts.screen(md) {
+            margin-top: 50px;
+        }
+    }
+}

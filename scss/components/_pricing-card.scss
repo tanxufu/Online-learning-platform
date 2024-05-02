@@ -1,0 +1,57 @@
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px 40px;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid #e9eaf0;
+    background: #fff;
+
+    &__cental {
+        border: none;
+        background: #111727;
+        color: #fff;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.7;
+    }
+
+    &__price {
+        margin-top: 7px;
+        font-size: 5.6rem;
+        font-weight: 700;
+        line-height: 1.72;
+
+        &-cost {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 1.62;
+        }
+    }
+
+    &__desc {
+        margin-top: 7px;
+
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+    &__list {
+        margin: 22px 0 30px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    &__btn {
+        margin-top: auto;
+    }
+}

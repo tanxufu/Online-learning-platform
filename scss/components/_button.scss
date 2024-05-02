@@ -55,3 +55,55 @@
         margin-left: 0;
     }
 }
+
+// like button
+.like-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+
+    &:not(&--liked) &__icon--liked {
+        display: none;
+    }
+
+    &--liked &__icon {
+        display: none;
+    }
+
+    &__icon--liked {
+        margin-top: 8px;
+    }
+}
+
+.send-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+
+    &__icon-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: var(--secondary-color);
+    }
+
+    &__icon {
+        width: 12px;
+        height: 12px;
+        margin-right: 2px;
+        filter: brightness(0) saturate(100%) invert(94%) sepia(6%) saturate(0%)
+            hue-rotate(140deg) brightness(106%) contrast(108%);
+    }
+}

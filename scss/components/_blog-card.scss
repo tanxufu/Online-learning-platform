@@ -1,0 +1,71 @@
+@use "../abstracts";
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &__img-wrap {
+        position: relative;
+        width: 100%;
+        padding-top: 66%;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    &__label {
+        margin-top: 20px;
+        color: var(--secondary-color);
+
+        font-weight: 500;
+        line-height: 1.75;
+    }
+
+    &__heading {
+        margin-top: 10px;
+
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    &__desc {
+        margin-top: 20px;
+        color: var(--text-desc-color);
+        line-height: 1.62;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        padding-top: 10px;
+        margin-top: auto;
+        color: var(--text-desc-color);
+        line-height: 1.62;
+
+        &-icon {
+            margin-top: 2px;
+            filter: brightness(0) saturate(100%) invert(43%) sepia(11%)
+                saturate(419%) hue-rotate(198deg) brightness(92%) contrast(89%);
+        }
+
+        &:hover {
+            color: var(--secondary-color);
+
+            .blog-card__link-icon {
+                filter: brightness(0) saturate(100%) invert(27%) sepia(40%)
+                    saturate(3425%) hue-rotate(222deg) brightness(90%)
+                    contrast(84%);
+            }
+        }
+    }
+}
